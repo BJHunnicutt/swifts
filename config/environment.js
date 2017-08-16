@@ -44,6 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/swifts/';
 
     // use mirage in production too since the app will break
     // if there is no API for Ember Data
