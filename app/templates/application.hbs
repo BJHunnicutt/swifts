@@ -1,30 +1,26 @@
 <div class="container">
-  <div class="menu">
-    {{#zf-accordion-menu}}
+  <div class="menu site-menu">
+    {{#zf-dropdown-menu}}
       <li>
-        <a href="#"><i class="material-icons">menu</i></a>
-        <ul class="menu vertical nested">
+        {{#link-to 'countdown'}}
+          <i class="material-icons md-36 md-light">menu</i>
+        {{/link-to}}
+        <ul class="menu site-menu">
           <li>
-            {{#link-to 'about'}}
-              About
-            {{/link-to}}
+            {{#link-to 'about'}} ABOUT {{/link-to}}
           </li>
           <li>
-            {{#link-to 'data'}}
-              Data
-            {{/link-to}}
+            {{#link-to 'data'}} DATA {{/link-to}}
           </li>
           <li>
-            {{#link-to 'contact'}}
-              Contact
-            {{/link-to}}
+            {{#link-to 'contact'}} CONTACT {{/link-to}}
           </li>
         </ul>
       </li>
-    {{/zf-accordion-menu}}
+    {{/zf-dropdown-menu}}
 
     {{#link-to 'index'}}
-      <h1> PDX SWIFTS </h1>
+      <h1 id="site-name"> PDX SWIFTS </h1>
     {{/link-to}}
   </div>
 
