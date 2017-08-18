@@ -1,22 +1,33 @@
 <div class="container">
   <div class="menu">
+    {{#zf-accordion-menu}}
+      <li>
+        <a href="#"><i class="material-icons">menu</i></a>
+        <ul class="menu vertical nested">
+          <li>
+            {{#link-to 'about'}}
+              About
+            {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'data'}}
+              Data
+            {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'contact'}}
+              Contact
+            {{/link-to}}
+          </li>
+        </ul>
+      </li>
+    {{/zf-accordion-menu}}
+
     {{#link-to 'index'}}
-      <h1>
-        <em>PDX Swifts</em>
-      </h1>
+      <h1> PDX SWIFTS </h1>
     {{/link-to}}
-    <div class="links">
-      {{#link-to 'about'}}
-        About
-      {{/link-to}}
-      {{#link-to 'data'}}
-        Data
-      {{/link-to}}
-      {{#link-to 'contact'}}
-        Contact
-      {{/link-to}}
-    </div>
   </div>
+
   <div class="body">
     {{outlet}}
   </div>
