@@ -1,5 +1,6 @@
 @import "settings";
-@import 'foundation-sites/foundation';
+@import "foundation-sites/foundation";
+@import "foundation-sites/util/util";
 @include foundation-everything;
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
